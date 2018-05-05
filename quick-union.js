@@ -1,5 +1,5 @@
 class QuickUnion {
-//broken
+	
 	constructor(n) {
 		this.n = n;
 		this.id = [];
