@@ -17,7 +17,7 @@ class WeightedQuickUnion {
 	union(a,b) {
 		const rootOfA = this.getRoot(a);
 		const rootOfB = this.getRoot(b);
-		if (rootOfA >= rootOfB){
+		if (this.size[rootOfA] >= this.size[rootOfB]){
 			this.size[rootOfA] += this.size[rootOfB];
 			this.id[rootOfB] = rootOfA;
 		} else {
